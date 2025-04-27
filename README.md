@@ -61,7 +61,7 @@ This project is a machine learning-based **House Price Prediction** model develo
 
 1. Clone this repository:
     ```bash
-    git clone https://github.com/yourusername/house-price-prediction.git
+    git clone https://github.com/anchal-1703/house-price-prediction.git
     cd house-price-prediction
     ```
 
@@ -99,18 +99,5 @@ This project is a machine learning-based **House Price Prediction** model develo
 ## 🤝 Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
----
-
-## 📜 License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
-
-## 📬 Contact
-
-- **GitHub**: [yourusername](https://github.com/yourusername)
-- **Email**: your.email@example.com
 
 ---
