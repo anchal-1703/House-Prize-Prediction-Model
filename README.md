@@ -1,14 +1,14 @@
 # 🏡 House Price Prediction Model
 
-This project is a machine learning-based **House Price Prediction** model developed using Python and Jupyter Notebook. The goal is to accurately predict the prices of houses based on various features such as area, number of bedrooms, location, etc.
+This project builds a machine learning model to predict housing prices using the Boston Housing dataset. It compares multiple regression algorithms and selects the best-performing model based on cross-validation scores.
 
 ---
 
-## 📂 Project Structure
+## 📦 Files
 
-- `house_price_prediction.ipynb` — Jupyter Notebook containing data exploration, preprocessing, model building, and evaluation.
-- `data/` — Folder containing the dataset(s).
-- `models/` — (Optional) Saved trained models for future use.
+- `best_model.pkl` – Saved trained regression model
+- `scaler.pkl` – Scaler used for feature normalization
+- `regression_results.txt` – Detailed model performance comparison
 
 ---
 
@@ -23,18 +23,43 @@ This project is a machine learning-based **House Price Prediction** model develo
 
 ---
 
-## 🛠️ Tech Stack
+## 📂 Dataset
 
-- Python 🐍
-- Jupyter Notebook 📒
-- Pandas
-- NumPy
-- Matplotlib / Seaborn
-- Scikit-Learn
-- (Optional) XGBoost / LightGBM
+- **Source**: Boston Housing Dataset
+- **Features**:
+  - CRIM: Per capita crime rate
+  - ZN: Proportion of residential land zoned for large lots
+  - INDUS: Proportion of non-retail business acres
+  - CHAS: Charles River dummy variable (1 if tract bounds river; 0 otherwise)
+  - NOX: Nitric oxide concentration
+  - RM: Average number of rooms per dwelling
+  - AGE: Proportion of owner-occupied units built before 1940
+  - DIS: Distance to employment centers
+  - RAD: Accessibility to radial highways
+  - TAX: Property tax rate
+  - PTRATIO: Pupil–teacher ratio
+  - B: Proportion of Black population
+  - LSTAT: % lower status of the population
+  - **MEDV**: Median house value (target)
+
+  ---
+  ## ⚙️ Model Training
+
+- **Algorithms evaluated**:
+  - Linear Regression
+  - Ridge & Lasso Regression
+  - Decision Tree Regressor
+  - Random Forest Regressor
+  - Support Vector Regressor (SVR)
+  - Gradient Boosting Regressor
+  - Bayesian Ridge
+  - **Evaluation**:
+  - Cross-validated using RMSE (Root Mean Squared Error)
+  - Best model is selected and saved as `best_model.pkl`
 
 ---
 
+  
 ## 📈 Workflow
 
 1. **Data Collection**  
@@ -57,26 +82,21 @@ This project is a machine learning-based **House Price Prediction** model develo
 
 ---
 
-## 🚀 How to Run
+## 🧠 Requirements
 
-1. Clone this repository:
-    ```bash
-    git clone https://github.com/anchal-1703/house-price-prediction.git
-    cd house-price-prediction
-    ```
+- Python3.6+ 🐍
+- Pandas
+- NumPy
+- Matplotlib 
+- Scikit-Learn
 
-2. Install dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
+---
 
-3. Open the Jupyter Notebook:
-    ```bash
-    jupyter notebook
-    ```
+## 🚀 How to Use
 
-4. Run the `house_price_prediction.ipynb` file.
-
+1. Clone the repo and install required libraries (`scikit-learn`, `numpy`, `pandas`, etc.)
+2. Run the training script to generate models and performance report.
+3. Use the file Model-Usage.py
 ---
 
 ## 📊 Sample Results
@@ -92,11 +112,8 @@ This project is a machine learning-based **House Price Prediction** model develo
 
 ---
 
-## ✨ Future Work
-
-- Deploy the model as a web app using **Flask** or **Streamlit**.
-- Add more advanced models like **XGBoost** and **CatBoost**.
-- Perform feature engineering to boost model performance.
+## 📈 Sample Output
+See regression_results.txt for cross-validation scores of all models and the selected best model.
 
 ---
 
